@@ -157,7 +157,7 @@
     <div id="login-screen">
         <h1> ❤️</h1>
         <p>Aby zagrać, wpisz nasze wiadome hasło (kto kocha mocniej):</p>
-        <p>Podpowiedz JA (Ptyś) kocha mocniej</p>
+        <p>Podpowiedź: JA (Ptyś) kocham mocniej</p>
         <input type="password" id="password" placeholder="Hasło...">
         <button class="action-btn" onclick="checkLogin()">Wejdź we mnie</button>
     </div>
@@ -183,8 +183,6 @@
         <h1>miau 💖</h1>
         <p>Zebrałaś wszystkie listy i dotarłaś do serduszka</p>
         
-        <!-- TUTAJ MOŻESZ WSTAWIĆ WASZE ZDJĘCIE, ZAMIENIAJĄC <div> NA <img> -->
-        <!-- Przykład: <img src="link-do-zdjecia.jpg" class="photo-placeholder" alt="My"> -->
         <img src="calus.jpg" class="photo-placeholder" alt="My">
         
         <h2 style="color: #d81b60;">ez</h2>
@@ -245,8 +243,7 @@
                     cell.className = 'cell ' + (map[y][x] === 1 ? 'wall' : 'path');
                     
                     if (playerX === x && playerY === y) {
-    cell.innerHTML = '<img src="aniela.jpg" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">';
-}
+                        cell.innerHTML = '<img src="image_803be1.jpg" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">';
                     } else if (map[y][x] === 3) {
                         cell.innerHTML = '💌';
                     } else if (map[y][x] === 4) {
